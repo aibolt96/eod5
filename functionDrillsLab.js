@@ -23,9 +23,7 @@ helloWorld()
 */
 
 //CODE HERE
-const jsNinja = () => {
-  return 'I am a javascript ninja!'
-}
+const jsNinja = () => 'I am a javascript ninja!'
 console.log(jsNinja())
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -36,11 +34,11 @@ console.log(jsNinja())
 
 //CODE HERE
 // function printName(name){
-//   console.log(`${name}`)
+//   console.log(name)
 // }
 // printName('Cameron')
 
-const printName = (name) => {console.log(`${name}`)}
+const printName = (name) => {console.log(name)}
 printName('Cameron')
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -69,16 +67,12 @@ greeting('Jake')
 //CODE HERE
 const compareNums = (number1, number2) => {
   if (number1 > number2){
-    console.log(number1)
-  } else if (number2 > number1){
-    console.log(number2)
-  } else if (number1 === number2){
-    console.log(number1)
+    return number1
+  } else {
+    return number2
   }
-}
-compareNums(3,7)
-compareNums(9,7)
-compareNums(3,3)
+}   
+console.log(compareNums(3,7))
 ////////////////// PROBLEM 6 ////////////////////
 /*
   Create a function called add that takes in two parameters 
@@ -102,13 +96,13 @@ console.log(sum)
   Uncomment the correct `console.log` underneath.
 */
 
-function exclaim(str) {
+const exclaim = function(str) {
   return str.toUpperCase() + '!!!'
 }
 
 // console.log('arrow')
-console.log('declaration')
-// console.log('expression')
+// console.log('declaration')
+console.log('expression')
 
 
 
@@ -295,11 +289,9 @@ let sampleString = "Hi, my name is Kylo."
 
 //CODE HERE
 function yellStr(str){
-  let upperstr = str.toUpperCase()
-  console.log(upperstr)
+ console.log(str.toUpperCase())
 }
-let yelling = yellStr(sampleString)
-console.log(yelling)
+yellStr(sampleString)
 ////////////////// PROBLEM 18 ////////////////////
 /*
   Write a function called emailCheck that takes in
@@ -386,13 +378,13 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['cute']
+let globalScope = ['duck']
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ['squeaky', 'nautical']
+let bathroomScope = ['duck', 'rubberDuck']
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ['nautical']
+let bathtubScope = ['duck','sailorDuck', 'rubberDuck']
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ['fluffy']
+let pondScope = ['duck', 'realDuck']
